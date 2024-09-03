@@ -252,7 +252,7 @@ jobs:
       - name: Prepare release notes
         run: ./scripts/release-notes.sh | tee ./RELEASE_NOTES.md
       - name: Download artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: dist/artifacts
       - name: Display structure of downloaded files
